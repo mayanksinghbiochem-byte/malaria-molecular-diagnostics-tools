@@ -1,0 +1,18 @@
+
+## Applications
+
+- Malaria diagnostics research
+- PCR/qPCR data processing
+- Primer design validation
+- Basic sequence analysis
+
+## Future Improvements
+
+- Integration with real-time PCR datasets
+- Automated mutation detection (Kelch13, DHFR/DHPS)
+- LFA data analysis modules
+
+## Author
+
+Biomedical Researcher  
+ICMR-National Institute of Malaria Research (ICMR-NIMR), New Delhi
