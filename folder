@@ -1,0 +1,12 @@
+malaria-molecular-diagnostics-tools/
+│
+├── README.md
+├── requirements.txt
+├── data/
+│   └── sample_qpcr_data.csv
+├── scripts/
+│   ├── qpcr_analysis.py
+│   ├── primer_gc_tm.py
+│   └── fasta_gc_content.py
+└── results/
+    └── (empty for now)
