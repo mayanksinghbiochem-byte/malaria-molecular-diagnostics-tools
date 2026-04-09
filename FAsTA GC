@@ -1,0 +1,17 @@
+def read_fasta(file):
+    with open(file) as f:
+        seq = ""
+        for line in f:
+            if not line.startswith(">"):
+                seq += line.strip()
+    return seq
+
+def gc_content(seq):
+    return (seq.count('G') + seq.count('C')) / len(seq) * 100
+
+if __name__ == "__main__":
+    file = input("Enter FASTA file path: ")
+    seq = read_fasta(file)
+
+    print("Sequence Length:", len(seq))
+    print("GC Content:", round(gc_content(seq), 2), "%")
