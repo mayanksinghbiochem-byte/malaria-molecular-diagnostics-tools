@@ -1,0 +1,13 @@
+def calculate_gc(seq):
+    gc = (seq.count('G') + seq.count('C')) / len(seq) * 100
+    return round(gc, 2)
+
+def calculate_tm(seq):
+    tm = 2*(seq.count('A') + seq.count('T')) + 4*(seq.count('G') + seq.count('C'))
+    return tm
+
+if __name__ == "__main__":
+    primer = input("Enter primer sequence: ").upper()
+
+    print("GC Content:", calculate_gc(primer), "%")
+    print("Melting Temp (Tm):", calculate_tm(primer), "°C")
