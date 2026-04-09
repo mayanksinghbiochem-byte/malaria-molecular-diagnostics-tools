@@ -1,0 +1,18 @@
+# Malaria Molecular Diagnostics Tools
+
+A collection of simple, practical bioinformatics and molecular biology utilities for malaria research.
+
+## Overview
+
+This repository contains scripts developed to support molecular diagnostics workflows, including:
+
+- qPCR data analysis
+- Primer GC content and melting temperature calculation
+- FASTA sequence GC content analysis
+
+These tools are designed for researchers working in resource-limited settings who need quick and reliable analysis pipelines.
+
+## Tools
+
+### 1. qPCR Analysis
+Analyzes Ct values and determines detection based on threshold.
