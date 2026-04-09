@@ -1,0 +1,19 @@
+import pandas as pd
+
+def analyze_qpcr(file):
+    df = pd.read_csv(file)
+
+    print("\nBasic Summary:")
+    print(df.describe())
+
+    threshold = 35
+    df['Detected'] = df['Ct'] < threshold
+
+    print("\nDetection Summary:")
+    print(df[['Sample', 'Ct', 'Detected']])
+
+    df.to_csv('../results/qpcr_results.csv', index=False)
+    print("\nResults saved to results/qpcr_results.csv")
+
+if __name__ == "__main__":
+    analyze_qpcr('../data/sample_qpcr_data.csv')
